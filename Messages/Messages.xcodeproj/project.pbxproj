@@ -12,6 +12,11 @@
 		A188EE1628E49AAF005AC42C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A188EE1428E49AAF005AC42C /* Main.storyboard */; };
 		A188EE1828E49AB2005AC42C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A188EE1728E49AB2005AC42C /* Assets.xcassets */; };
 		A188EE1B28E49AB2005AC42C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A188EE1928E49AB2005AC42C /* LaunchScreen.storyboard */; };
+		A188EE2328E4A0C4005AC42C /* MessagesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188EE2228E4A0C4005AC42C /* MessagesListTableViewController.swift */; };
+		A188EE2528E4A163005AC42C /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188EE2428E4A163005AC42C /* MessageTableViewCell.swift */; };
+		A188EE2728E4A4D4005AC42C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188EE2628E4A4D4005AC42C /* Message.swift */; };
+		A188EE2928E4A879005AC42C /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188EE2828E4A879005AC42C /* MessageController.swift */; };
+		A188EE2B28E4B994005AC42C /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188EE2A28E4B994005AC42C /* DateFormatterExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		A188EE1728E49AB2005AC42C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A188EE1A28E49AB2005AC42C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A188EE1C28E49AB2005AC42C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A188EE2228E4A0C4005AC42C /* MessagesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesListTableViewController.swift; sourceTree = "<group>"; };
+		A188EE2428E4A163005AC42C /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		A188EE2628E4A4D4005AC42C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A188EE2828E4A879005AC42C /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		A188EE2A28E4B994005AC42C /* DateFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,75 @@
 		A188EE0D28E49AAF005AC42C /* Messages */ = {
 			isa = PBXGroup;
 			children = (
+				A188EE2F28E4D053005AC42C /* Model */,
+				A188EE2C28E4CFEB005AC42C /* Resources */,
+				A188EE2D28E4D010005AC42C /* Storyboards */,
+				A188EE2E28E4D023005AC42C /* Controllers */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		A188EE2C28E4CFEB005AC42C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A188EE2A28E4B994005AC42C /* DateFormatterExtension.swift */,
 				A188EE0E28E49AAF005AC42C /* AppDelegate.swift */,
 				A188EE1028E49AAF005AC42C /* SceneDelegate.swift */,
-				A188EE1428E49AAF005AC42C /* Main.storyboard */,
 				A188EE1728E49AB2005AC42C /* Assets.xcassets */,
 				A188EE1928E49AB2005AC42C /* LaunchScreen.storyboard */,
 				A188EE1C28E49AB2005AC42C /* Info.plist */,
 			);
-			path = Messages;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A188EE2D28E4D010005AC42C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A188EE1428E49AAF005AC42C /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A188EE2E28E4D023005AC42C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A188EE3128E4D079005AC42C /* View Controller */,
+				A188EE3228E4D083005AC42C /* Custom View */,
+				A188EE3028E4D061005AC42C /* Model Controller */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A188EE2F28E4D053005AC42C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A188EE2628E4A4D4005AC42C /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A188EE3028E4D061005AC42C /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A188EE2828E4A879005AC42C /* MessageController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		A188EE3128E4D079005AC42C /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A188EE2228E4A0C4005AC42C /* MessagesListTableViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		A188EE3228E4D083005AC42C /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				A188EE2428E4A163005AC42C /* MessageTableViewCell.swift */,
+			);
+			path = "Custom View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +207,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A188EE0F28E49AAF005AC42C /* AppDelegate.swift in Sources */,
+				A188EE2928E4A879005AC42C /* MessageController.swift in Sources */,
+				A188EE2B28E4B994005AC42C /* DateFormatterExtension.swift in Sources */,
+				A188EE2528E4A163005AC42C /* MessageTableViewCell.swift in Sources */,
+				A188EE2728E4A4D4005AC42C /* Message.swift in Sources */,
 				A188EE1128E49AAF005AC42C /* SceneDelegate.swift in Sources */,
+				A188EE2328E4A0C4005AC42C /* MessagesListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WHCBWLCWQ4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Messages/Info.plist;
+				INFOPLIST_FILE = Messages/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -313,7 +389,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WHCBWLCWQ4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Messages/Info.plist;
+				INFOPLIST_FILE = Messages/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
