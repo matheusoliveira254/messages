@@ -17,6 +17,7 @@
 		A188EE2728E4A4D4005AC42C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188EE2628E4A4D4005AC42C /* Message.swift */; };
 		A188EE2928E4A879005AC42C /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188EE2828E4A879005AC42C /* MessageController.swift */; };
 		A188EE2B28E4B994005AC42C /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188EE2A28E4B994005AC42C /* DateFormatterExtension.swift */; };
+		A188EE3728E60628005AC42C /* MarkAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188EE3628E60628005AC42C /* MarkAllViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		A188EE2628E4A4D4005AC42C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		A188EE2828E4A879005AC42C /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
 		A188EE2A28E4B994005AC42C /* DateFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
+		A188EE3628E60628005AC42C /* MarkAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkAllViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				A188EE3128E4D079005AC42C /* View Controller */,
-				A188EE3228E4D083005AC42C /* Custom View */,
 				A188EE3028E4D061005AC42C /* Model Controller */,
+				A188EE3228E4D083005AC42C /* Custom View */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				A188EE2228E4A0C4005AC42C /* MessagesListTableViewController.swift */,
+				A188EE3628E60628005AC42C /* MarkAllViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A188EE0F28E49AAF005AC42C /* AppDelegate.swift in Sources */,
+				A188EE3728E60628005AC42C /* MarkAllViewController.swift in Sources */,
 				A188EE2928E4A879005AC42C /* MessageController.swift in Sources */,
 				A188EE2B28E4B994005AC42C /* DateFormatterExtension.swift in Sources */,
 				A188EE2528E4A163005AC42C /* MessageTableViewCell.swift in Sources */,

@@ -7,6 +7,7 @@
 
 import UIKit
 
+//This is step 1 of a protocol
 protocol MessageTableViewCellDelegate: AnyObject {
     func markAsReadButtonWasTapped(cell: MessageTableViewCell)
 }
@@ -22,6 +23,7 @@ class MessageTableViewCell: UITableViewCell {
 
     /// A date formatter used to conver the messages date into a coherent string
     var dateFormatter = DateFormatter.short()
+    //Step 2 of declaring a Delegate Pattern
     weak var delegate: MessageTableViewCellDelegate?
     
     /// Updates the table view cells views for the given messages content
@@ -36,6 +38,7 @@ class MessageTableViewCell: UITableViewCell {
     }
     
     @IBAction func messageReadButtonPressed(_ sender: Any) {
+        //Step 5 of the Delegation Pattern
         delegate?.markAsReadButtonWasTapped(cell: self)
     }
 }

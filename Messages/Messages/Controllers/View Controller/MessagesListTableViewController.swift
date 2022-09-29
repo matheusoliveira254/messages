@@ -13,8 +13,6 @@ class MessagesListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
     }
 
     // MARK: - Table view data source
@@ -26,6 +24,7 @@ class MessagesListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "messageCell", for: indexPath) as? MessageTableViewCell else {return UITableViewCell()}
         let message = messageController.messages[indexPath.row]
+        //Step 3 of the Delegation Pattern - will produce an error
         cell.delegate = self
         cell.updateViews(message: message)
         return cell
@@ -64,6 +63,7 @@ class MessagesListTableViewController: UITableViewController {
     
 } // End of class
 
+//Step 4 will be the extension that gives the job to the delegate. The Implementation
 extension MessagesListTableViewController: MessageTableViewCellDelegate {
     func markAsReadButtonWasTapped(cell: MessageTableViewCell) {
         guard let indexPath = tableView.indexPath(for: cell) else {return}
